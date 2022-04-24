@@ -164,7 +164,7 @@ img {
 
 .nav__toggle {
   font-size: 1.2rem;
-  color: var(--white-color);
+  color: black;
   cursor: pointer;
 }
 
@@ -583,7 +583,7 @@ img {
 
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 534px) {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -604,9 +604,11 @@ img {
   }
   .home__description {
     font-size: var(--small-font-size);
+    margin-left: 0rem;
+    padding-right: 30%;
   }
   .specs__img {
-    width: 200px;
+    display: none;
   }
   .case__container {
     grid-template-columns: 0.6fr 1fr;
@@ -628,14 +630,17 @@ img {
 /* For medium devices */
 @media screen and (min-width: 576px) {
   .home__container {
-    grid-template-columns: 0.8fr 1fr;
+    grid-template-columns: 0.1fr 1fr;
+  }
+  .home__description {
+    padding-right: 10rem;
   }
   .home__data {
     padding-top: 2rem;
   }
   .home__img {
-    top: -7rem;
-    left: 0;
+    top: -10rem;
+    left: 29rem;
   }
   .specs__img {
     position: initial;
@@ -701,7 +706,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
   .home__img {
-    top: -9rem;
+    top: -10rem;
     left: 4rem;
   }
   .home__data {
